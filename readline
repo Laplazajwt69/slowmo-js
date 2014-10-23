@@ -1,0 +1,18 @@
+var readline = open(); // Do not remove this line
+
+// Tip: call the function readline by adding parentheses after (ie readline())
+// Write your code here
+var line = readline();
+while (line) {
+  console.log(line);
+  line = readline();
+}
+
+// Do not remove the following lines
+function open() {
+  var cursor = 0;
+  var file = ["Lorem ipsum dolor sit amet,", " consectetur adipisicing elit, ", "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."," Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris", " nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate", " velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat", " non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."];
+  return function() {
+    return file[cursor++];
+  };
+}
